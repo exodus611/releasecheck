@@ -1,0 +1,27 @@
+name: "releasecheck"
+description: "Preflight checks for a release folder: one PASS/FAIL verdict before you send files anywhere."
+branding:
+  icon: "check-circle"
+  color: "blue"
+inputs:
+  folder:
+    description: "Folder to check"
+    required: false
+    default: "."
+  manifest:
+    description: "Path to releasecheck.json (optional)"
+    required: false
+    default: ""
+  args:
+    description: "Extra arguments, for example --online"
+    required: false
+    default: ""
+runs:
+  using: "composite"
+  steps:
+    - name: Run preflight checks
+      shell: bash
+      run: |
+        python3 "${{ github.action_path }}/releasecheck.py" check "${{ inputs.folder }}" \
+          ${{ inputs.manifest && format('-m {0}', inputs.manifest) || '' }} \
+          --json releasecheck-report.json --md releasecheck-report.md ${{ inputs.args }}

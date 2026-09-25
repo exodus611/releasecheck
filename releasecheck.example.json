@@ -1,0 +1,10 @@
+{
+  "name": "example release 1.0",
+  "artifacts": ["book.epub", "book.pdf", "cover.jpg"],
+  "images": [{"path": "cover.jpg", "min_long_side": 1600}],
+  "forbid": ["*.key", "*.pem", ".env*", "*.bak"],
+  "hashes": "SHA256SUMS.txt",
+  "online_links": false,
+  "ignore": ["private-notes.md"],
+  "extra_limits": ["Cover text is checked against the store's rules by a human, not here."]
+}
