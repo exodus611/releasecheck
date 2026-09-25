@@ -1,0 +1,2 @@
+session_date,chat,model,read_context,re_explained_minutes,increment_accepted,failed_what,note
+2026-09-25,pre-journal,unknown,n/a,0,yes,-,"Repository prepared before this journal existed: name, tool, 11 tests, generated demo folders, CI. Recorded as it happened."

@@ -88,6 +88,17 @@ for machines.
 Without a manifest the tool still runs and checks every file it finds. See
 `releasecheck.example.json`.
 
+## How this project is built
+
+One session at a time, each in a **fresh chat**, each starting from the repository
+alone — no chat history, no "let me remind you what we did yesterday". Every
+session adds one increment, runs the tests, and appends a row to
+[`journal/handoff.csv`](journal/handoff.csv).
+
+The journal records accepted increments **and failures**, including sessions that
+misunderstood the project. Row 1 is marked `pre-journal`: it is the honest gap
+before this rule existed. Read the rules in [`journal/README.md`](journal/README.md).
+
 ## What it does not prove
 
 - that a store, a printer or a client will accept the files;
