@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.1 — 2026-09-26
+
+Name change only. The Action is called **Release Preflight Check** now.
+
+- The GitHub Marketplace requires the action name to be unique across the whole
+  Marketplace, and `releasecheck` was already taken by an unrelated action
+  (an iOS/tvOS release notifier). Publishing failed on that conflict.
+- Nothing else changed: same code, same inputs, same one-command behaviour, same
+  repository. `uses: exodus611/releasecheck@...` keeps working — repository paths
+  are unaffected by the display name.
+
 ## 0.1.0 — 2026-09-25
 
 First working version.

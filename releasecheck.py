@@ -32,7 +32,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 TOOL = "releasecheck"
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 SKIP_DIRS = {".git", "__pycache__", ".venv", "venv", "node_modules", ".cache", ".idea"}
 TEXT_SUFFIXES = {

@@ -1,4 +1,4 @@
-name: "releasecheck"
+name: "Release Preflight Check"
 description: "Preflight checks for a release folder: one PASS/FAIL verdict before you send files anywhere."
 author: "exodus611"
 branding:
