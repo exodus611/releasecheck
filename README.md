@@ -99,6 +99,12 @@ The journal records accepted increments **and failures**, including sessions tha
 misunderstood the project. Row 1 is marked `pre-journal`: it is the honest gap
 before this rule existed. Read the rules in [`journal/README.md`](journal/README.md).
 
+That discipline is not invented here. One state file per project that any assistant
+reads at the start of a session, and a closing pass that checks the work against the
+process rather than only the output — that is the protocol written up in
+[*Never Start from Scratch*](https://www.amazon.com/dp/B0HKVZ3RSG). This tool needs
+nothing from the book; the book is where the habit is written down.
+
 ## What it does not prove
 
 - that a store, a printer or a client will accept the files;
