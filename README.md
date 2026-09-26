@@ -19,7 +19,7 @@ uploaded anywhere, and no network call happens unless you pass `--online`.
 Use it in your own repository as a GitHub Action:
 
 ```yaml
-- uses: exodus611/releasecheck@main
+- uses: exodus611/releasecheck@v0.1.0   # pin a version, or @main for the latest
   with:
     folder: dist
 ```

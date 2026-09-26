@@ -1,5 +1,6 @@
 name: "releasecheck"
 description: "Preflight checks for a release folder: one PASS/FAIL verdict before you send files anywhere."
+author: "exodus611"
 branding:
   icon: "check-circle"
   color: "blue"
